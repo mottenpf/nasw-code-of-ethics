@@ -1,0 +1,106 @@
+# Refined HTML content with unnecessary elements removed, improved semantic structure, and embedded CSS
+cleaned_html = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASW Code of Ethics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        ul, ol {
+            margin-left: 20px;
+        }
+        p {
+            text-align: justify;
+            margin-bottom: 1em;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #007bff;
+            color: #fff;
+            position: relative;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NASW Code of Ethics</h1>
+    </header>
+    <div class="container">
+        <section>
+            <p>The NASW Code of Ethics is a set of standards that guide the professional conduct of social workers.
+               The 2021 update includes language that addresses the importance of professional self-care. Moreover, revisions
+               to the Cultural Competence standard provide more explicit guidance to social workers. All social workers should review
+               the new text and affirm their commitment to abide by the Code of Ethics.</p>
+        </section>
+        
+        <section>
+            <h2>Preamble</h2>
+            <p>The primary mission of the social work profession is to enhance human well-being and help meet the basic human
+               needs of all people, with particular attention to the needs and empowerment of people who are vulnerable, oppressed,
+               and living in poverty. Social workers promote social justice and social change with and on behalf of clients...</p>
+        </section>
+
+        <section>
+            <h2>Purpose of the NASW Code of Ethics</h2>
+            <ul>
+                <li>Identifies core values on which social work’s mission is based.</li>
+                <li>Summarizes broad ethical principles that reflect the profession’s core values.</li>
+                <li>Provides a guide for dealing with ethical issues or dilemmas in social work practice.</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Ethical Principles</h2>
+            <p><strong>Value:</strong> Service<br><strong>Ethical Principle:</strong> Social workers’ primary goal is to help people in need and to address social problems.</p>
+            <p><strong>Value:</strong> Social Justice<br><strong>Ethical Principle:</strong> Social workers challenge social injustice.</p>
+        </section>
+        
+        <section>
+            <h2>Ethical Standards</h2>
+            <ol>
+                <li>Social Workers' Ethical Responsibilities to Clients</li>
+                <li>Social Workers' Ethical Responsibilities to Colleagues</li>
+                <li>Social Workers' Ethical Responsibilities in Practice Settings</li>
+                <li>Social Workers' Ethical Responsibilities as Professionals</li>
+                <li>Social Workers' Ethical Responsibilities to the Social Work Profession</li>
+                <li>Social Workers' Ethical Responsibilities to the Broader Society</li>
+            </ol>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 NASW. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+"""
+
+# Display the final refined web page in a browser preview
+display(HTML(cleaned_html))
