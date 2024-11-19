@@ -1,5 +1,4 @@
-# Refined HTML content with unnecessary elements removed, improved semantic structure, and embedded CSS
-cleaned_html = """
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,8 +28,9 @@ cleaned_html = """
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             border-radius: 5px;
         }
-        h1, h2 {
+        h1, h2, h3 {
             color: #2c3e50;
+            margin-top: 20px;
         }
         ul, ol {
             margin-left: 20px;
@@ -55,43 +55,71 @@ cleaned_html = """
     </header>
     <div class="container">
         <section>
-            <p>The NASW Code of Ethics is a set of standards that guide the professional conduct of social workers.
-               The 2021 update includes language that addresses the importance of professional self-care. Moreover, revisions
-               to the Cultural Competence standard provide more explicit guidance to social workers. All social workers should review
-               the new text and affirm their commitment to abide by the Code of Ethics.</p>
-        </section>
-        
-        <section>
             <h2>Preamble</h2>
-            <p>The primary mission of the social work profession is to enhance human well-being and help meet the basic human
-               needs of all people, with particular attention to the needs and empowerment of people who are vulnerable, oppressed,
-               and living in poverty. Social workers promote social justice and social change with and on behalf of clients...</p>
+            <p>The primary mission of the social work profession is to enhance human well-being and help meet the basic human needs of all people, with particular attention to the needs and empowerment of people who are vulnerable, oppressed, and living in poverty. A historic and defining feature of social work is the profession’s dual focus on individual well-being in a social context and the well-being of society...</p>
         </section>
 
         <section>
             <h2>Purpose of the NASW Code of Ethics</h2>
-            <ul>
+            <p>The NASW Code of Ethics serves six purposes:</p>
+            <ol>
                 <li>Identifies core values on which social work’s mission is based.</li>
                 <li>Summarizes broad ethical principles that reflect the profession’s core values.</li>
                 <li>Provides a guide for dealing with ethical issues or dilemmas in social work practice.</li>
-            </ul>
+                <li>Provides ethical standards to which the general public can hold the social work profession accountable.</li>
+                <li>Socializes practitioners new to the field to social work’s mission, values, ethical principles, and ethical standards.</li>
+                <li>Articulates standards for assessing whether social workers have engaged in unethical conduct.</li>
+            </ol>
         </section>
-        
+
         <section>
             <h2>Ethical Principles</h2>
+            <p>The following broad ethical principles are based on social work’s core values of service, social justice, dignity and worth of the person, importance of human relationships, integrity, and competence:</p>
             <p><strong>Value:</strong> Service<br><strong>Ethical Principle:</strong> Social workers’ primary goal is to help people in need and to address social problems.</p>
             <p><strong>Value:</strong> Social Justice<br><strong>Ethical Principle:</strong> Social workers challenge social injustice.</p>
+            <p><strong>Value:</strong> Dignity and Worth of the Person<br><strong>Ethical Principle:</strong> Social workers respect the inherent dignity and worth of the person.</p>
+            <p><strong>Value:</strong> Importance of Human Relationships<br><strong>Ethical Principle:</strong> Social workers recognize the central importance of human relationships.</p>
+            <p><strong>Value:</strong> Integrity<br><strong>Ethical Principle:</strong> Social workers behave in a trustworthy manner.</p>
+            <p><strong>Value:</strong> Competence<br><strong>Ethical Principle:</strong> Social workers practice within their areas of competence and develop and enhance their professional expertise.</p>
         </section>
-        
+
         <section>
             <h2>Ethical Standards</h2>
+            <p>The following ethical standards are relevant to the professional activities of all social workers:</p>
             <ol>
-                <li>Social Workers' Ethical Responsibilities to Clients</li>
-                <li>Social Workers' Ethical Responsibilities to Colleagues</li>
-                <li>Social Workers' Ethical Responsibilities in Practice Settings</li>
-                <li>Social Workers' Ethical Responsibilities as Professionals</li>
-                <li>Social Workers' Ethical Responsibilities to the Social Work Profession</li>
-                <li>Social Workers' Ethical Responsibilities to the Broader Society</li>
+                <li><h3>Social Workers' Ethical Responsibilities to Clients</h3>
+                    <ul>
+                        <li>Commitment to Clients</li>
+                        <li>Self-Determination</li>
+                        <li>Informed Consent</li>
+                        <li>Competence</li>
+                        <li>Cultural Competence</li>
+                        <li>Conflicts of Interest</li>
+                        <li>Privacy and Confidentiality</li>
+                    </ul>
+                </li>
+                <li><h3>Social Workers' Ethical Responsibilities to Colleagues</h3>
+                    <ul>
+                        <li>Respect</li>
+                        <li>Confidentiality</li>
+                        <li>Interdisciplinary Collaboration</li>
+                        <li>Disputes Involving Colleagues</li>
+                        <li>Sexual Relationships</li>
+                        <li>Unethical Conduct</li>
+                    </ul>
+                </li>
+                <li><h3>Social Workers' Ethical Responsibilities in Practice Settings</h3>
+                    <p>Details professional obligations in various practice settings.</p>
+                </li>
+                <li><h3>Social Workers' Ethical Responsibilities as Professionals</h3>
+                    <p>Highlights competence, discrimination, private conduct, and impairment.</p>
+                </li>
+                <li><h3>Social Workers' Ethical Responsibilities to the Social Work Profession</h3>
+                    <p>Includes maintaining integrity and promoting the profession.</p>
+                </li>
+                <li><h3>Social Workers' Ethical Responsibilities to the Broader Society</h3>
+                    <p>Focuses on public participation, social welfare, and political action.</p>
+                </li>
             </ol>
         </section>
     </div>
@@ -100,7 +128,3 @@ cleaned_html = """
     </footer>
 </body>
 </html>
-"""
-
-# Display the final refined web page in a browser preview
-display(HTML(cleaned_html))
